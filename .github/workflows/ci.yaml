@@ -84,9 +84,9 @@ jobs:
       - name: Checkout deploy repository
         uses: actions/checkout@v4
         with:
-          repository: SAI-KISHORE29/observability-demo     # <-- change if different repo
+          repository: SAI-KISHORE29/end-to-end-cicd-deployment     # <-- change if different repo
           token: ${{ secrets.GH_PAT }}
-          path: deploy-repo
+          path: end-to-end-cicd-deployment
 
       - name: Update image tag in deployment.yaml
         run: |
