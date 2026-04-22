@@ -15,6 +15,7 @@ app.use((req, res, next) => {
   next();
 });
 
+
 // Pino request logging middleware
 app.use(
   pinoHttp({
